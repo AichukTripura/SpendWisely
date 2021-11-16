@@ -17,7 +17,7 @@ const myTheme = {
 const App = () => {
   return (
     <NavigationContainer theme ={myTheme}>
-      <Stack.Navigator initialRouteName = {"Home"}>
+      <Stack.Navigator screenOptions = {{headerShown: false}} initialRouteName = {"Home"}>
         <Stack.Screen name="Home" component = {Home}/>
       </Stack.Navigator>
     </NavigationContainer>
